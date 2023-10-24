@@ -21,11 +21,11 @@ public class EmployeeList implements List<Employee> {
      * @param name имя сотрудника
      * @return список номеров, найденных по имени сотрудника
      */
-    public Map<String, String> getPhone(String name) {
-        Map<String, String> result = new HashMap<>();
+    public List<String> getPhone(String name) {
+        List<String> result = new ArrayList<>();
         for (Employee employee: employees) {
             if(employee != null && employee.getName().equals(name)) {
-                result.put(employee.getName(), employee.getPhone());
+                result.add(employee.getName() + "=" + employee.getPhone());
             }
         }
         return result;

@@ -64,7 +64,8 @@ public class Employee {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
-                ", hireDate=" + hireDate +
+                ", hireDate=" + hireDate + '\'' +
+                ", experience=" + getExperience() +
                 '}';
     }
 }
